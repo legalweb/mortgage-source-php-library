@@ -1,0 +1,45 @@
+{
+    "name": "mortgage-source/api",
+    "description": "PHP Mortgage Source API Client",
+    "type": "library",
+    "license": "GPL-3.0-only",
+    "homepage": "https://github.com/legalweb/mortgage-source-php-library/",
+    "authors": [
+        {
+            "name": "Aaron Parker",
+            "email": "aaron@legalweb.org.uk",
+            "homepage": "http://www.legalweb.org.uk"
+        }
+    ],
+    "keywords": [
+        "legalweb",
+        "Mortgage",
+        "Source",
+        "API"
+    ],
+    "require": {
+        "php": ">=7.1",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8",
+        "friendsofphp/php-cs-fixer": "1.7.*",
+        "ulrichsg/getopt-php": "^3.2",
+        "yosymfony/toml": "^1.0"
+    },
+    "suggest": {
+        
+    },
+    "autoload": {
+        "psr-4": {
+            "Legalweb\\MortgageSourceClient\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Legalweb\\MortgageSourceClientTest\\": "tests/",
+            "Legalweb\\MortgageSourceClientExample\\": "examples/"
+        }
+    }
+}
