@@ -224,6 +224,8 @@ class MortgageSourceService
                 throw new APIUnavailableException("API Service Unavailable");
             case 403:
                 throw new AccessForbiddenException("Access Forbidden");
+            case 401:
+                throw new AccessForbiddenException("Invalid Credentials");
             case 400:
                 throw new APIRequestException("Bad API request");
             case 200:
